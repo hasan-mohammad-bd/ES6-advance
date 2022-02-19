@@ -22,3 +22,5 @@ console.log(myNotes);
 //arrow function
 const square = x => x * x;
 console.log(square(8));
+
+
