@@ -1,3 +1,6 @@
+//32-3 (advanced) Array Destructuring, nested object Optional chaining
+
+
 // declare variable based on the name of an object property.
 //name the variable according to property name
 const myObject = {x:2, y:3, z:4};

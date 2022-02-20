@@ -1,3 +1,5 @@
+//32-5 Map string array, array of objects map, foreach
+
 //find out the length of the array
 const friend = ["Tom Hanks", "Tom Cri", "Tom Brady"];
 

@@ -1,3 +1,6 @@
+//32-6 (advanced) Implement filter, find on an array of objects
+
+
 //filter: filter out the specific value according to the condition. 
 const numbers = [12,14,12,34,5,99,55,2,19];
 const bigNumbers = numbers.filter(number => number > 20);

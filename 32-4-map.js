@@ -1,3 +1,5 @@
+//32-4 Array map to do one line loop magic
+
 const numbers = [4,5,9,10];
 const output2 = [];
 

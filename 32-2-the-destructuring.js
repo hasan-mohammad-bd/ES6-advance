@@ -1,3 +1,6 @@
+//32-2 Destructuring Object to extract values to variables
+
+
 const fish = {id: 58, name: "King Hilsha",price: 9000, phone: "01444444444", address: "chadpur", dress: "silver"};
 
 // to avoid to call the fish many times.
