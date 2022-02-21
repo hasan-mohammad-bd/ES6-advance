@@ -10,7 +10,7 @@ console.log(b);
 //error handling
 //==========================================================
 //if we confront the error:
-//con not read property "q" of undefined.
+//con not read property "q" which output comes up  "undefined".
 //the question mark define, it finds out the property which in not in the array or object. the unlisted property value come up with the value "undefined".
 console.log("myObject.p", myObject?.p?.q);
 
