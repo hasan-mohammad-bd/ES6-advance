@@ -20,7 +20,11 @@ console.log(phone, dress);
 //object within object, to access this below way can be applied.
 const company = {
     name: "GP", 
-    ceo:{id:1 , name:"ajmol", food:"fuchka"} ,
+    ceo:{
+        id:1 , 
+        name:"ajmol", 
+        food:"fuchka"
+    } ,
     web:{ 
         work: "website development", 
         employee: 22, 

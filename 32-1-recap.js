@@ -13,7 +13,7 @@ function maxNumber(array=[]){
     return max;
 }
 
-const biggest = maxNumber();
+const biggest = maxNumber([23,45]);
 console.log(biggest);
 
 //template string
