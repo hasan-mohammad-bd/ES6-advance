@@ -1,7 +1,9 @@
 //32-8 (advanced) Inheritance, extends class, super, class method
 
 class TeamMember {
+    
     name;
+    theName = "Hasan";
     address = 'BD';
     constructor(name, address) {
         this.name = name;
@@ -41,6 +43,7 @@ class NeptuneDev extends TeamMember {
 }
 
 const aamir = new Support('Aamir Khan', 'BD', 11);
+console.log(aamir);
 const salman = new Support('Solaiman Khan', 'Dubai', 4);
 const sharuk = new Support('SRK Khan', 'Dubai', 9);
 const akshay = new Support('Akshay Kumar', 'Dubai', 11);

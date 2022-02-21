@@ -122,3 +122,31 @@ const haram = new Library("haram Library", 34, 100, "10:00 pm")
 console.log(haram);
 
 haram.openingTimes();
+
+//inhabitance
+
+class TeamMember {
+    CEO = "Hasan";
+    Manager = "Mohammad";
+    constructor(place, day){
+        this.place = place;
+        this.day = day;
+    }
+        theWork(theguest){
+            console.log(theguest, "is out honorable guest at", this.time);
+        }
+    
+}
+
+class TeamMember2 extends TeamMember {
+    operation = "jolil";
+    constructor(place, day, time){
+        super(place, day);
+        this.time = time;
+    }
+}
+
+const theTeam = new TeamMember2("barisal","sunday", 12);
+console.log(theTeam);
+
+theTeam.theWork("Mohammad");
