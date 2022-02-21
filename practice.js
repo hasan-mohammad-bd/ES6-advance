@@ -28,11 +28,11 @@ const myCompany = {
 }
 
 //not a shortcut
-const firstOperation = myCompany.CEO.profation.firstOperation;
-console.log(firstOperation);
+// const firstOperation = myCompany.CEO.profation.firstOperation;
+// console.log(firstOperation);
 
-//shortcut
-const {firstOperation, secondOperation} = myCompany.CEO.profation;
+// //shortcut
+// const {firstOperation, secondOperation} = myCompany.CEO.profation;
 
 //array destructuring 
 const arrayArBap = ["hello", "hi", "how are you", "whats up"]
@@ -66,3 +66,59 @@ console.log(theBigNumber);
 
 const theFind = array.find(x => x.length*2 == 4)
 console.log(theFind);
+
+const products = [
+    {name: "water bottle", price: 50, color: "yellow"}, 
+    {name: "mobile phone", price: 15000, color: "black"},
+    {name: "smart watch", price: 3000, color: 39},
+    {name: "water glass", price: 3, color: "white", color:"pink"}
+]
+
+// const productName = products.map(product => product.name);
+// console.log(productName);
+products.forEach(x => console.log(x.name));
+
+
+class Company {
+    name;
+    address;
+    designation = "Support Web Developer";
+    constructor(name, address){
+        this.name = name;
+        this.address = address;
+    }
+    startSession(){
+        console.log(this.name, "start a support session");
+    }
+}
+
+
+const amir = new Company("amir Khan", "indian company");
+console.log(amir);
+
+amir.startSession();
+
+
+//practice
+//with class we can create multiple object if necessary.
+class Library {
+    location = "bangladesh";
+    size = "bigger";
+    standard = "first Class";
+    constructor(name, tableQuantity, chairQuantity,openingTime){
+        this.name = name;
+        this.tableQuantity = tableQuantity;
+        this.chairQuantity = chairQuantity;
+        this.openingTime = openingTime;
+    
+    }
+
+    openingTimes(){
+        console.log(this.name ,"open at:", this.openingTime);
+    }
+}
+
+const haram = new Library("haram Library", 34, 100, "10:00 pm")
+console.log(haram);
+
+haram.openingTimes();

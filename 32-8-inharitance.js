@@ -1,32 +1,51 @@
 //32-8 (advanced) Inheritance, extends class, super, class method
 
-class TeamMember{
+class TeamMember {
     name;
-    address = "BD";
-    constructor(name, address){
+    address = 'BD';
+    constructor(name, address) {
         this.name = name;
         this.address = address;
     }
-    buildRoutine(){
-        console.log(this.name,"Build a routine for", student);
-    }
 }
 
-//this class borrow some property and the value from the upper Class
-//it is used for shortcut writing, where other property dont need to write.
 class Support extends TeamMember {
     groupSupportTime;
-    constructor(name, address, time){ 
+    designation = 'Support Web Dev';
+    constructor(name, address, time) {
         super(name, address)
         this.groupSupportTime = time;
     }
+    startSession() {
+        console.log(this.name, 'start a support session');
+    }
 }
 
-const amir = new Support("Amir Khan", "BD", 4)
-console.log(amir);
+class StudentCare extends TeamMember {
+    designation = 'Care Web Dev';
+    buildARoutine(student) {
+        console.log(this.name, 'Build a routine for', student);
+    }
+}
 
-//prototypical inherent 
-//how the class link to another class 
+class NeptuneDev extends TeamMember {
+    codeEditor;
+    designation = 'Neptune App Dev';
+    constructor(name, address, editor) {
+        super(name, address);
+        this.codeEditor = editor;
+    }
+    releaseApp(version) {
+        console.log(this.name, 'release app version', version);
+    }
+}
 
-const player = { name: { firstName: "Mashrafe", lastName: "Murtaza" }, age: 38};
-console.log(player.firstName);
+const aamir = new Support('Aamir Khan', 'BD', 11);
+const salman = new Support('Solaiman Khan', 'Dubai', 4);
+const sharuk = new Support('SRK Khan', 'Dubai', 9);
+const akshay = new Support('Akshay Kumar', 'Dubai', 11);
+
+const alia = new StudentCare('Alia Bhatt', 'Mumbai');
+const ash = new NeptuneDev('Ash', 'Mumbai', 'Android studio');
+ash.releaseApp('1.4.5');
+console.log(ash.name);
